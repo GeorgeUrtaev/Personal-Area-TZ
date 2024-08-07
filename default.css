@@ -1,0 +1,39 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: 'Futura PT';
+}
+ul
+{
+	list-style-type: none;
+}
+a
+{
+	text-decoration: none;
+}
+.g-flex
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.g-btn
+{
+	background: #172139;
+	border-radius: 5px;
+}
+body
+{
+	height: 1500px;
+	background: #F4F4F4;
+	display: flex;
+	flex-direction: column;
+}
+main
+{
+	padding-top: 30px;
+	flex: 1 1 auto;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header g-flex">
+			<a href="#"><img src="images/png/Logo.png" alt="логотип"></a>
+			<a href="#"><img src="images/svg/Vector.svg" alt="выход"></a>
+		</div>
+	</header>
+	<main>
+		<section class="menu">
+			<div class="menu__flex">
+				<ul class="menu__list">
+					<li class="menu__item"><img src="images/svg/Group (1).svg" alt=""><span>Имущество</span></li>
+					<li class="menu__item"><img src="images/svg/Vector (5).svg" alt=""><span>Инвентаризация</span></li>
+					<li class="menu__item"><img src="images/svg/Vector (1).svg" alt=""><span>Сотрудники</span></li>
+					<li class="menu__item"><img src="images/svg/Vector (2).svg" alt=""><span>Уведомления</span></li>
+					<li class="menu__item" onclick="show()"><img src="images/svg/Vector (3).svg" alt=""><span>Локации</span></li>
+					<li class="menu__item"><img src="images/svg/Vector (4).svg" alt=""><span>Настройки</span></li>
+					<li class="menu__item"><img src="images/svg/Галочка.svg" alt=""><span>Скрыть меню</span></li>
+				</ul>
+				<div class="location">
+					<h2 class="location__title">Локации / Все локации</h2>
+					<div class="location__btns g-flex">
+						<div class="location__btns-wrap">
+							<button class="location__btn1 g-btn">Все локации</button>
+							<button class="location__btn2">Импорт/Экспорт</button>
+							<button class="location__btn3">Настройки</button>
+						</div>
+						<button class="location__synchronization g-btn"><img src="images/svg/Vector (6).svg" alt="синхронизация"><span>СИНХРОНИЗАЦИЯ</span><span>(17.05.2024 15:23:21)</span></button>
+					</div>
+					<div class="location__BigBtn">
+						<button class="location__createBtn g-btn"><img src="images/svg/Плюс.svg" alt=""><span>СОЗДАТЬ ЛОКАЦИЮ</span></button>
+						<form class="location__checkbox">
+							<div class="location__checkbox-wrap">
+							    <input type="checkbox">
+							    <span>Поиск по точному вхождению</span>
+						    </div>
+						  	<div class="location__search">
+								<input type="text" placeholder="ПОИСК">
+								<img src="images/svg/Лупа.svg" alt="поиск">
+							</div>
+						</form>
+					</div>
+				<div class="settings">
+					<div class="settings__loca1">
+						<ul class="settings__list">
+							<li class="settings__item"><img src="images/svg/Group 256.svg" alt=""><img src="images/svg/Group 532.svg" alt=""><span>Локация 1</span>
+							</li>
+							<li class="settings__item"><span>512</span></li>
+							<li class="settings__item cursor" onclick="edit()"><img src="images/svg/pencil.svg" alt=""><span>Редактировать</span></li>
+							<li class="settings__item"><img src="images/svg/krest.svg" alt=""><span>Удалить</span></li>
+						</ul>
+						<ul class="settings__subDepartment">
+							<li class="settings__item"><img src="images/svg/Group 263.svg" alt=""><img src="images/svg/Group 532.svg" alt=""> <span>Подотдел 1</span>
+							</li>
+							<li class="settings__item"><span>10</span></li>
+							<li class="settings__item settings__item-color"><span>Для утерь</span></li>
+						</ul>
+						<div class="settings__item-subSubDepartment">
+							<ul class="settings__subDepartment2">
+								<li class="settings__item"><img src="images/svg/Group 263.svg" alt=""><img src="images/svg/Group 532.svg" alt=""> <span>Подотдел 2</span>
+								</li>
+								<li class="settings__item"><span>100</span></li>
+							</ul>
+							<ul class="settings__subSubDepartment">
+								<li class="settings__item subSubDepartment"><img src="images/svg/Group 532.svg" alt=""><span>Подподотдел 1</span>
+								</li>
+								<li class="settings__item subSubDepartment"><span>2</span></li>
+								<li class="settings__item subSubDepartment"><span>Виртуальная</span></li>
+								<li class="settings__item subSubDepartment"><span>Без штрихкода</span></li>
+							</ul>
+						</div>
+						<ul class="settings__subDepartment">
+							<li class="settings__item"><img src="images/svg/Group 263.svg" alt=""><img src="images/svg/Group 532.svg" alt=""><span>Подотдел 3</span>
+							</li>
+							<li class="settings__item"><span>400</span></li>
+						</ul>
+					</div>
+					<div class="settings__loca2">
+						<ul class="settings__list">
+							<li class="settings__item"><img src="images/svg/Group 256.svg" alt=""><img src="images/svg/Group 532.svg" alt=""><span>Локация 2</span>
+							</li>
+							<li class="settings__item"><span>100</span></li>
+							<li class="settings__item cursor" onclick="edit()"><img src="images/svg/pencil.svg" alt=""><span>Редактировать</span></li>
+							<li class="settings__item"><img src="images/svg/krest.svg" alt=""><span>Удалить</span></li>
+						</ul>
+					</div>
+					<div class="settings__loca3">
+						<ul class="settings__list">
+							<li class="settings__item"><img src="images/svg/Group 256.svg" alt=""><img src="images/svg/Group 532.svg" alt=""><span>Локация 3</span>
+							</li>
+							<li class="settings__item"><span>100</span></li>
+							<li class="settings__item cursor" onclick="edit()"><img src="images/svg/pencil.svg" alt=""><span>Редактировать</span></li>
+							<li class="settings__item"><img src="images/svg/krest.svg" alt=""><span>Удалить</span></li>
+						</ul>
+					</div>
+				</div>		
+				</div>
+			</div>
+						
+		</section>
+		<div class="popup__create">
+			<div class="popup__wrap">
+				<h3>Создать локацию</h3>
+				<div class="popup__name">
+					<input type="text" placeholder="Название">
+				</div>
+				<div class="popup__barcode">
+					<input type="text" placeholder="штрихкод">
+				</div>
+				<div class="popup__RFID">
+					<input type="text" placeholder="RFID">
+				</div>
+				<div class="popup__nesting">
+					<div><span>Вложенность</span></div>
+					<img src="images/svg/Галочка.svg" alt="раскрыть">
+				</div>
+				<div class="popup__checkbox g-flex">
+					<span>Виртуальная локация</span>
+    				<div class="switch-btn"></div>
+				</div>
+				<div class="popup__checkbox g-flex">
+					<span>Локация для утерь</span>
+    				<div class="switch-btn"></div>
+				</div>
+				<div class="popup__btns g-flex">
+					<button class="g-btn"><img src="images/svg/Сохранить.svg" alt=""><span>СОЗДАТЬ</span></button>
+					<button><span>ОТМЕНИТЬ</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="popup__edit">
+			<div class="popup__wrap">
+				<h3>Изменить локацию <span>%название%</span></h3>
+				<div class="popup__name">
+					<p>Название</p>
+					<input type="text" placeholder="Ввести название">
+				</div>
+				<div class="popup__barcode">
+					<p>Штрихкод</p>
+					<input type="text" placeholder="Ввести штрихкод">
+				</div>
+				<div class="popup__RFID">
+					<p>RFID</p>
+					<input type="text" placeholder=" Ввести rfid">
+				</div>
+				<div class="popup__nesting-wrap">
+					<p>Вложенность</p>
+					<div class="popup__nesting">
+						<span>Локация 1</span>
+						<img src="images/svg/Галочка.svg" alt="раскрыть">
+					</div>
+				</div>
+				<div class="popup__checkbox g-flex">
+					<span>Виртуальная локация</span>
+    				<div class="switch-btn"></div>
+				</div>
+				<div class="popup__checkbox g-flex">
+					<span>Локация для утерь</span>
+    				<div class="switch-btn"></div>
+				</div>
+				<div class="popup__btns3">
+					<div class="popup__btns-wrap g-flex">
+						<button><img src="images/svg/Удалить.svg" alt=""><span>УДАЛИТЬ</span></button>
+						<button><span>ОТМЕНИТЬ</span></button>
+					</div>
+					<button class="popup__btns-bigBtn"><img src="images/svg/Сохранить.svg" alt=""><span>СОЗДАТЬ</span></button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer-flex"></div>
+			<div class="footer__text"><span>Последний приём 20.09.2021 18:36:21</span><span>Последняя передача  20.09.2021 18:38:21</span></div>
+			<div class="footer__document"><img src="images/svg/Vector (8).svg" alt="документация"><a href="#">Документация</a></div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

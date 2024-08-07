@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/Futura PT/FuturaPT-Light.eot');
+    src: url('fonts/Futura PT/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Futura PT/FuturaPT-Light.woff2') format('woff2'),
+        url('fonts/Futura PT/FuturaPT-Light.woff') format('woff'),
+        url('fonts/Futura PT/FuturaPT-Light.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Galdeano';
+    src: url('fonts/Galdeano/Galdeano-Regular.eot');
+    src: url('fonts/Galdeano/Galdeano-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Galdeano/Galdeano-Regular.woff2') format('woff2'),
+        url('fonts/Galdeano/Galdeano-Regular.woff') format('woff'),
+        url('fonts/Galdeano/Galdeano-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
